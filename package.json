@@ -2,11 +2,11 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
-    "start": "env NODE_ENV=development nodemon app"
+    "start": "env app.js"
   },
   "author": "Funmibi Iyanda",
   "license": "ISC",
