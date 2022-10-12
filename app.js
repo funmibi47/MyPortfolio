@@ -52,6 +52,6 @@ app.use('/', mainRoute)
 // })
 
 const PORT = process.env.ACCESS_PORT || 7200
-.listen(PORT, function(){
+server.listen(PORT, function(){
     console.log(`MYPORTFOLIO is running on PORT ${PORT}`)
 }|| 5000)
