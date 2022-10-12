@@ -1,0 +1,603 @@
+{{!-- <div class="nav">
+    <a href="#sec1" id="sec1" onclick="change(this)">sec 1</a>
+
+    <a href="#sec2" id="sec2" onclick="change(this)">sec 2</a>
+</div> --}}
+
+<section class="sec  home">
+    <div class="row pt-5 ">
+        <div class="col-6 mt-5">
+            <h4 class="mt-3">Hello my name is <span class="myname">Funmibi Abibat Iyanda</span></h4>
+            <h4>I'm a <span>Fullstack Developer</span></h4>
+            <p>Software developer with over two years of work experience, eager to contribute to team success through
+                hard work, attention to details and excellent organizational skills. Motivated to learn, grow and excel
+                in software and web application developer</p>
+            <a class="btn" id="aboutus" onclick="change2('aboutus')">More Info</a>
+        </div>
+        <div class="col-6 text-center mt-5">
+            <img class="profile_img" src="/images/profile-3.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="sec hidden aboutus pt-4">
+    <h1>About Me</h1>
+    <span class="one"></span>
+    <span class="two"></span>
+    <div class="row about_sub_sec pt-4">
+        <div class="col-12">
+            <h3>I'm Funmibi Abibat Iyanda a <span>Software Developer.</span></h3>
+            <p> Enthusiastic software developer, eager to develope amazing project through hard work, attention to
+                details and excellent organizational skills.
+
+                Clear understanding of the system being developed and training in various skills. Motivated to learn,
+                grow and excel in web and application development.</p>
+        </div>
+    </div>
+    <div class="row progress_">
+        <div class="col-6 progress_1">
+            <div class="row">
+                <div class="col-6">
+                    <ul>
+                        {{!-- <li>
+                            <h6>Birthday:</h6> <span>16th august 1999</span>
+                        </li> --}}
+                        <li>
+                            <h6>Degree:</h6> <span>Bsc</span>
+                        </li>
+                        <li>
+                            <h6>Country:</h6> <span>Nigeria</span>
+                        </li>
+                        <li>
+                            <h6>State:</h6> <span>Ogun</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        {{!-- <li>
+                            <h6>Age:</h6> <span>23</span>
+                        </li> --}}
+                        <li>
+                            <h6>Email:</h6> <span>fh.iyanda@gmail.com</span>
+                        </li>
+                        <li>
+                            <h6>Phone:</h6> <span>+234 903 8504 402</span>
+                        </li>
+                        <li>
+                            <h6>Frelance:</h6> <span>Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6"><a class="btn" onclick="window.location.href='/CV.pdf'"
+                                download="Funmibi Abibat Iyanda CV">Download CV</a></div>
+                        <div class="col-6"><a class="btn" id="contactus" onclick="change2('contactus')">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 progress_2">
+            <div class="progress_bar">
+                <label>Css</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>Html</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>Javascript</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>Node</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>Bootstrap</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>Vue Js</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+            </div>
+            <div class="progress_bar">
+                <label>React Js</label>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">65%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec hidden education">
+    <div class="row">
+        <div class="col-6 education_">
+            <h1>Education</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="date_"><span class="progress_span"></span> <i class="bi bi-calendar"></i>
+                                <h6>2010</h6>-
+                                <h6>2016</h6>
+                            </div>
+                            <h3>Secondary School</h3>
+                            <p>I attended Bodija International college Senior Secondary School- Oyo state, i attended
+                                from 2010 to 2016 and got a Senior Secondary School Leaving Certificate after graduating
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                <h6>2017</h6>-
+                                <h6>2021</h6>
+                            </div>
+                            <h3>University</h3>
+                            <p>I attended Eastern Mediterranean University - Famagusta Cyprus, i attended
+                                from 2017 to 2021 and got a Bachelor / B.S. in Computer engineering
+                                after graduating
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 experience_">
+            <h1>Work Experience</h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                <h6>2021</h6>-
+                                <h6>2021</h6>
+                            </div>
+                            <h3>Web Developer at Opensoft Innovation Co Ltd. - Cyprus</h3>
+                            <p> This was a school internship job, we were helped and guided in
+                                programming languages like css, php, JavaScript and html, and on how to apply them in
+                                web development </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                <h6>2022</h6>-
+                                <h6>Ongoing</h6>
+                            </div>
+                            <h3>Software Application developer at Interra Networks
+                            </h3>
+                            <p> I built software applications for both the company and outside organizations.
+                                Built REST API to access and use data.
+                                Analyzed existing programs for modification purposes.
+                                Researching and designing new software systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec hidden services pt-5">
+    <h1>Services</h1>
+    <span class="one"></span>
+    <span class="two"></span>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                    <h6>HTML5/CSS Development</h6>
+                    <p> We ensure to feed interactive elements using W3C Standard & Cross-browser compatibility coding
+                        standards to meet your digital dreams.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-link"></i>
+                    <h6>API Development </h6>
+                    <p>Create custom APIs to extend existing software or connect to third-party services. Flawlessly
+                        connect your interface to other apps and devices</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                    <h6>Full Stack Web Development</h6>
+                    <p>With our expertise in web architecture, we use
+                        the best front-end languages ​​and libraries to create interactive front-ends alongside agile
+                        back-ends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                    <h6>Custom Web App Development</h6>
+                    <p>We create unique web apps for your specific business needs.</p>
+                </div>
+            </div>
+        </div>
+        {{!-- <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                    <h6>Web Design</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nulla.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <i class="bi bi-laptop"></i>
+                    <h6>Web Design</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nulla.</p>
+                </div>
+            </div>
+        </div> --}}
+    </div>
+</section>
+<section class="sec hidden portfolio pt-5">
+    <div class="row">
+        <div class="col-4 mb-3">
+            <a href="http://inpay.interranetworks.com/" target="_blank"> <img src="/images/inpaypic.png" alt=""></a>
+        </div>
+        <div class="col-4 mb-3">
+            <a href="http://interraelector.interranetworks.com/" target="_blank"><img src="/images/elector.svg"
+                    alt=""></a>
+        </div>
+        <div class="col-4 mb-3">
+            <a href="https://www.nigsims.com/" target="_blank"><img src="/images/tns_ticketing.png" alt=""></a>
+        </div>
+        <div class="col-4 mb-3">
+            <a href="https://www.nigsims.com/" target="_blank"><img src="/images/nigsimspic.png" alt=""></a>
+        </div>
+        <div class="col-4 mb-3">
+            <a href="#"><img src="/images/modpics.png" alt=""></a>
+        </div>
+        <div class="col-4 mb-3">
+            <a href="https://yana.ng/" target="_blank"><img src="/images/inpaypic.png" alt=""></a>
+        </div>
+    </div>
+</section>
+{{!-- <section class="sec hidden whyattend">
+    <h1>why attend</h1>
+</section> --}}
+<section class="sec hidden contactus pt-5">
+    <h1>Contact Me</h1>
+    <span class="one"></span>
+    <span class="two"></span>
+    <div class="any_question text-center">
+        <h3>Have Any Questions ?</h3>
+        <h6>I'm At Your Service</h6>
+    </div>
+    <div class="contact_list_container">
+        <div class="contact_list">
+            <i class="bi bi-laptop"></i>
+            <h5>Call me on</h5>
+            <h6>+234 903 8504 402 </h6>
+        </div>
+        <div class="contact_list">
+            <i class="bi bi-laptop"></i>
+            <h5>linkedin</h5>
+            <a href="https://www.linkedin.com/in/funmibi-abibat-iyanda-018bb81b0/">
+                <h6>My link</h6>
+            </a>
+        </div>
+        <div class="contact_list">
+            <i class="bi bi-laptop"></i>
+            <h5>Email</h5>
+            <h6>fh.iyanda@gmail.com</h6>
+        </div>
+    </div>
+    <div class="any_question text-center">
+        <h3>Email Me From Here</h3>
+        <h6>I Am Very Responsive to Emails</h6>
+    </div>
+    <form action="https://formsubmit.co/839a79721509c3ac4ba4d7f4fae4ed80" method="POST">
+        <div class="row contact_form">
+            <div class="col-6"><input type="text" name="Name" placeholder="Name"></div>
+            <div class="col-6 text-end"><input type="text" name="Email" placeholder="Email"></div>
+            <div class="col-12">
+                <select name="Country" class="countries" id="">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="col-12"><textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-end">
+                <button class="send_msg" type="submit">Send Message</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<script>
+
+    // load countries
+
+    function loadCountries() {
+        let countries = [
+            { "name": "Afghanistan", "code": "AF" },
+            { "name": "land Islands", "code": "AX" },
+            { "name": "Albania", "code": "AL" },
+            { "name": "Algeria", "code": "DZ" },
+            { "name": "American Samoa", "code": "AS" },
+            { "name": "AndorrA", "code": "AD" },
+            { "name": "Angola", "code": "AO" },
+            { "name": "Anguilla", "code": "AI" },
+            { "name": "Antarctica", "code": "AQ" },
+            { "name": "Antigua and Barbuda", "code": "AG" },
+            { "name": "Argentina", "code": "AR" },
+            { "name": "Armenia", "code": "AM" },
+            { "name": "Aruba", "code": "AW" },
+            { "name": "Australia", "code": "AU" },
+            { "name": "Austria", "code": "AT" },
+            { "name": "Azerbaijan", "code": "AZ" },
+            { "name": "Bahamas", "code": "BS" },
+            { "name": "Bahrain", "code": "BH" },
+            { "name": "Bangladesh", "code": "BD" },
+            { "name": "Barbados", "code": "BB" },
+            { "name": "Belarus", "code": "BY" },
+            { "name": "Belgium", "code": "BE" },
+            { "name": "Belize", "code": "BZ" },
+            { "name": "Benin", "code": "BJ" },
+            { "name": "Bermuda", "code": "BM" },
+            { "name": "Bhutan", "code": "BT" },
+            { "name": "Bolivia", "code": "BO" },
+            { "name": "Bosnia and Herzegovina", "code": "BA" },
+            { "name": "Botswana", "code": "BW" },
+            { "name": "Bouvet Island", "code": "BV" },
+            { "name": "Brazil", "code": "BR" },
+            { "name": "British Indian Ocean Territory", "code": "IO" },
+            { "name": "Brunei Darussalam", "code": "BN" },
+            { "name": "Bulgaria", "code": "BG" },
+            { "name": "Burkina Faso", "code": "BF" },
+            { "name": "Burundi", "code": "BI" },
+            { "name": "Cambodia", "code": "KH" },
+            { "name": "Cameroon", "code": "CM" },
+            { "name": "Canada", "code": "CA" },
+            { "name": "Cape Verde", "code": "CV" },
+            { "name": "Cayman Islands", "code": "KY" },
+            { "name": "Central African Republic", "code": "CF" },
+            { "name": "Chad", "code": "TD" },
+            { "name": "Chile", "code": "CL" },
+            { "name": "China", "code": "CN" },
+            { "name": "Christmas Island", "code": "CX" },
+            { "name": "Cocos (Keeling) Islands", "code": "CC" },
+            { "name": "Colombia", "code": "CO" },
+            { "name": "Comoros", "code": "KM" },
+            { "name": "Congo", "code": "CG" },
+            { "name": "Congo, The Democratic Republic of the", "code": "CD" },
+            { "name": "Cook Islands", "code": "CK" },
+            { "name": "Costa Rica", "code": "CR" },
+            { "name": "Cote D\"Ivoire", "code": "CI" },
+            { "name": "Croatia", "code": "HR" },
+            { "name": "Cuba", "code": "CU" },
+            { "name": "Cyprus", "code": "CY" },
+            { "name": "Czech Republic", "code": "CZ" },
+            { "name": "Denmark", "code": "DK" },
+            { "name": "Djibouti", "code": "DJ" },
+            { "name": "Dominica", "code": "DM" },
+            { "name": "Dominican Republic", "code": "DO" },
+            { "name": "Ecuador", "code": "EC" },
+            { "name": "Egypt", "code": "EG" },
+            { "name": "El Salvador", "code": "SV" },
+            { "name": "Equatorial Guinea", "code": "GQ" },
+            { "name": "Eritrea", "code": "ER" },
+            { "name": "Estonia", "code": "EE" },
+            { "name": "Ethiopia", "code": "ET" },
+            { "name": "Falkland Islands (Malvinas)", "code": "FK" },
+            { "name": "Faroe Islands", "code": "FO" },
+            { "name": "Fiji", "code": "FJ" },
+            { "name": "Finland", "code": "FI" },
+            { "name": "France", "code": "FR" },
+            { "name": "French Guiana", "code": "GF" },
+            { "name": "French Polynesia", "code": "PF" },
+            { "name": "French Southern Territories", "code": "TF" },
+            { "name": "Gabon", "code": "GA" },
+            { "name": "Gambia", "code": "GM" },
+            { "name": "Georgia", "code": "GE" },
+            { "name": "Germany", "code": "DE" },
+            { "name": "Ghana", "code": "GH" },
+            { "name": "Gibraltar", "code": "GI" },
+            { "name": "Greece", "code": "GR" },
+            { "name": "Greenland", "code": "GL" },
+            { "name": "Grenada", "code": "GD" },
+            { "name": "Guadeloupe", "code": "GP" },
+            { "name": "Guam", "code": "GU" },
+            { "name": "Guatemala", "code": "GT" },
+            { "name": "Guernsey", "code": "GG" },
+            { "name": "Guinea", "code": "GN" },
+            { "name": "Guinea-Bissau", "code": "GW" },
+            { "name": "Guyana", "code": "GY" },
+            { "name": "Haiti", "code": "HT" },
+            { "name": "Heard Island and Mcdonald Islands", "code": "HM" },
+            { "name": "Holy See (Vatican City State)", "code": "VA" },
+            { "name": "Honduras", "code": "HN" },
+            { "name": "Hong Kong", "code": "HK" },
+            { "name": "Hungary", "code": "HU" },
+            { "name": "Iceland", "code": "IS" },
+            { "name": "India", "code": "IN" },
+            { "name": "Indonesia", "code": "ID" },
+            { "name": "Iran, Islamic Republic Of", "code": "IR" },
+            { "name": "Iraq", "code": "IQ" },
+            { "name": "Ireland", "code": "IE" },
+            { "name": "Isle of Man", "code": "IM" },
+            { "name": "Israel", "code": "IL" },
+            { "name": "Italy", "code": "IT" },
+            { "name": "Jamaica", "code": "JM" },
+            { "name": "Japan", "code": "JP" },
+            { "name": "Jersey", "code": "JE" },
+            { "name": "Jordan", "code": "JO" },
+            { "name": "Kazakhstan", "code": "KZ" },
+            { "name": "Kenya", "code": "KE" },
+            { "name": "Kiribati", "code": "KI" },
+            { "name": "Korea, Democratic People\"S Republic of", "code": "KP" },
+            { "name": "Korea, Republic of", "code": "KR" },
+            { "name": "Kuwait", "code": "KW" },
+            { "name": "Kyrgyzstan", "code": "KG" },
+            { "name": "Lao People\"S Democratic Republic", "code": "LA" },
+            { "name": "Latvia", "code": "LV" },
+            { "name": "Lebanon", "code": "LB" },
+            { "name": "Lesotho", "code": "LS" },
+            { "name": "Liberia", "code": "LR" },
+            { "name": "Libyan Arab Jamahiriya", "code": "LY" },
+            { "name": "Liechtenstein", "code": "LI" },
+            { "name": "Lithuania", "code": "LT" },
+            { "name": "Luxembourg", "code": "LU" },
+            { "name": "Macao", "code": "MO" },
+            { "name": "Macedonia, The Former Yugoslav Republic of", "code": "MK" },
+            { "name": "Madagascar", "code": "MG" },
+            { "name": "Malawi", "code": "MW" },
+            { "name": "Malaysia", "code": "MY" },
+            { "name": "Maldives", "code": "MV" },
+            { "name": "Mali", "code": "ML" },
+            { "name": "Malta", "code": "MT" },
+            { "name": "Marshall Islands", "code": "MH" },
+            { "name": "Martinique", "code": "MQ" },
+            { "name": "Mauritania", "code": "MR" },
+            { "name": "Mauritius", "code": "MU" },
+            { "name": "Mayotte", "code": "YT" },
+            { "name": "Mexico", "code": "MX" },
+            { "name": "Micronesia, Federated States of", "code": "FM" },
+            { "name": "Moldova, Republic of", "code": "MD" },
+            { "name": "Monaco", "code": "MC" },
+            { "name": "Mongolia", "code": "MN" },
+            { "name": "Montenegro", "code": "ME" },
+            { "name": "Montserrat", "code": "MS" },
+            { "name": "Morocco", "code": "MA" },
+            { "name": "Mozambique", "code": "MZ" },
+            { "name": "Myanmar", "code": "MM" },
+            { "name": "Namibia", "code": "NA" },
+            { "name": "Nauru", "code": "NR" },
+            { "name": "Nepal", "code": "NP" },
+            { "name": "Netherlands", "code": "NL" },
+            { "name": "Netherlands Antilles", "code": "AN" },
+            { "name": "New Caledonia", "code": "NC" },
+            { "name": "New Zealand", "code": "NZ" },
+            { "name": "Nicaragua", "code": "NI" },
+            { "name": "Niger", "code": "NE" },
+            { "name": "Nigeria", "code": "NG" },
+            { "name": "Niue", "code": "NU" },
+            { "name": "Norfolk Island", "code": "NF" },
+            { "name": "Northern Mariana Islands", "code": "MP" },
+            { "name": "Norway", "code": "NO" },
+            { "name": "Oman", "code": "OM" },
+            { "name": "Pakistan", "code": "PK" },
+            { "name": "Palau", "code": "PW" },
+            { "name": "Palestinian Territory, Occupied", "code": "PS" },
+            { "name": "Panama", "code": "PA" },
+            { "name": "Papua New Guinea", "code": "PG" },
+            { "name": "Paraguay", "code": "PY" },
+            { "name": "Peru", "code": "PE" },
+            { "name": "Philippines", "code": "PH" },
+            { "name": "Pitcairn", "code": "PN" },
+            { "name": "Poland", "code": "PL" },
+            { "name": "Portugal", "code": "PT" },
+            { "name": "Puerto Rico", "code": "PR" },
+            { "name": "Qatar", "code": "QA" },
+            { "name": "Reunion", "code": "RE" },
+            { "name": "Romania", "code": "RO" },
+            { "name": "Russian Federation", "code": "RU" },
+            { "name": "RWANDA", "code": "RW" },
+            { "name": "Saint Helena", "code": "SH" },
+            { "name": "Saint Kitts and Nevis", "code": "KN" },
+            { "name": "Saint Lucia", "code": "LC" },
+            { "name": "Saint Pierre and Miquelon", "code": "PM" },
+            { "name": "Saint Vincent and the Grenadines", "code": "VC" },
+            { "name": "Samoa", "code": "WS" },
+            { "name": "San Marino", "code": "SM" },
+            { "name": "Sao Tome and Principe", "code": "ST" },
+            { "name": "Saudi Arabia", "code": "SA" },
+            { "name": "Senegal", "code": "SN" },
+            { "name": "Serbia", "code": "RS" },
+            { "name": "Seychelles", "code": "SC" },
+            { "name": "Sierra Leone", "code": "SL" },
+            { "name": "Singapore", "code": "SG" },
+            { "name": "Slovakia", "code": "SK" },
+            { "name": "Slovenia", "code": "SI" },
+            { "name": "Solomon Islands", "code": "SB" },
+            { "name": "Somalia", "code": "SO" },
+            { "name": "South Africa", "code": "ZA" },
+            { "name": "South Georgia and the South Sandwich Islands", "code": "GS" },
+            { "name": "Spain", "code": "ES" },
+            { "name": "Sri Lanka", "code": "LK" },
+            { "name": "Sudan", "code": "SD" },
+            { "name": "Suriname", "code": "SR" },
+            { "name": "Svalbard and Jan Mayen", "code": "SJ" },
+            { "name": "Swaziland", "code": "SZ" },
+            { "name": "Sweden", "code": "SE" },
+            { "name": "Switzerland", "code": "CH" },
+            { "name": "Syrian Arab Republic", "code": "SY" },
+            { "name": "Taiwan, Province of China", "code": "TW" },
+            { "name": "Tajikistan", "code": "TJ" },
+            { "name": "Tanzania, United Republic of", "code": "TZ" },
+            { "name": "Thailand", "code": "TH" },
+            { "name": "Timor-Leste", "code": "TL" },
+            { "name": "Togo", "code": "TG" },
+            { "name": "Tokelau", "code": "TK" },
+            { "name": "Tonga", "code": "TO" },
+            { "name": "Trinidad and Tobago", "code": "TT" },
+            { "name": "Tunisia", "code": "TN" },
+            { "name": "Turkey", "code": "TR" },
+            { "name": "Turkmenistan", "code": "TM" },
+            { "name": "Turks and Caicos Islands", "code": "TC" },
+            { "name": "Tuvalu", "code": "TV" },
+            { "name": "Uganda", "code": "UG" },
+            { "name": "Ukraine", "code": "UA" },
+            { "name": "United Arab Emirates", "code": "AE" },
+            { "name": "United Kingdom", "code": "GB" },
+            { "name": "United States", "code": "US" },
+            { "name": "United States Minor Outlying Islands", "code": "UM" },
+            { "name": "Uruguay", "code": "UY" },
+            { "name": "Uzbekistan", "code": "UZ" },
+            { "name": "Vanuatu", "code": "VU" },
+            { "name": "Venezuela", "code": "VE" },
+            { "name": "Viet Nam", "code": "VN" },
+            { "name": "Virgin Islands, British", "code": "VG" },
+            { "name": "Virgin Islands, U.S.", "code": "VI" },
+            { "name": "Wallis and Futuna", "code": "WF" },
+            { "name": "Western Sahara", "code": "EH" },
+            { "name": "Yemen", "code": "YE" },
+            { "name": "Zambia", "code": "ZM" },
+            { "name": "Zimbabwe", "code": "ZW" }
+        ]
+        let Options
+        Options += '<option value="' + '' + '" selected="' + '">' + 'Select Your Country' + '</option>'
+        countries.forEach(e => {
+            Options += '<option value="' + e.name + '"">' + e.name + '</option>'
+        })
+        document.querySelector('.countries').innerHTML = Options
+    }
+    loadCountries()
+</script>

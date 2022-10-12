@@ -1,0 +1,203 @@
+{{!-- <div class="nav">
+    <a href="#sec1" id="sec1" onclick="change(this)">sec 1</a>
+
+    <a href="#sec2" id="sec2" onclick="change(this)">sec 2</a>
+</div> --}}
+
+<section class="sec  home">
+    <h1>home</h1>
+    <div class="days" id="days"></div>
+    <div class="hours" id="hours"></div>
+    <div class="minutes" id="minutes"></div>
+    <div class="seconds" id="seconds"></div>
+</section>
+<section class="sec hidden aboutus">
+    <h1>about us</h1>
+</section>
+<section class="sec hidden speakers">
+    <h1>speakers</h1>
+</section>
+<section class="sec hidden sponsorship">
+    <h1>sponsorship</h1>
+</section>
+<section class="sec hidden whyattend">
+    <h1>why attend</h1>
+</section>
+<section class="sec hidden contactus">
+    <h1>contact us</h1>
+</section>
+
+<script>
+
+    $(document).ready(function () {
+
+        let baseUrl = window.location.origin
+
+        const success_toastr = (msg) => {
+            Toastify({
+                text: msg,
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "left", // `left`, `center` or `right`
+                backgroundColor: "linear-gradient(to bottom, #00b09b, #28a745)", //#00b09b #96c93d
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                onClick: function () { }, // Callback after click
+            }).showToast();
+        }
+
+
+        const error_toastr = (msg) => {
+            Toastify({
+                text: msg,
+                duration: 4000,
+                newWindow: true,
+                close: false,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                backgroundColor: "linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,1))",
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                onClick: function () { }, // Callback after click
+            }).showToast();
+        }
+
+        var countDownDate = new Date("oct 16, 2022 00:00:00").getTime()
+        var x = setInterval(function () {
+            var now = new Date().getTime()
+            var distance = countDownDate - now
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerHTML = days
+            document.getElementById('hours').innerHTML = hours
+            document.getElementById('minutes').innerHTML = minutes
+            document.getElementById('seconds').innerHTML = seconds
+        }, 1000)
+
+        //register
+
+        function register() {
+            $('.register').on('click', function () {
+                let name = $('#name').val()
+                let email = $('#email').val()
+                let phone_no = $('#phone_no').val()
+
+                const reg_data = {
+                    'name': name,
+                    'email': email,
+                    'phone_no': phone_no,
+                }
+
+                let registerurl = baseUrl + '/register'
+
+                fetch(registerurl, {
+                    method: 'POST',
+                    body: JSON.stringify(reg_data),
+                    headers: { "Content-type": "application/json; charset=UTF-8" }
+                }).then(r => r.json())
+                    .then(response => {
+                        if (response.message) {
+                            let name = $('#name').val('')
+                            let email = $('#email').val('')
+                            let phone_no = $('#phone_no').val('')
+                            console.log(name)
+                            /*location.reload();
+                            return false;*/
+                        }
+                    })
+                    .catch(error => console.log(error))
+            })
+        }
+
+        //contact us
+
+        function contactus() {
+            $('.contactus').on('click', function () {
+                let firstname = $('#firstname').val()
+                let email = $('#email').val()
+                let lastname = $('#lastname').val()
+                let message = $('#address').val()
+                let phone_no = $('#phone_no').val()
+
+                const cont_data = {
+                    'firstname': firstname,
+                    'email': email,
+                    'phone_no': phone_no,
+                    'message': message,
+                    'lastname': lastname,
+                }
+
+                let conturl = baseUrl + '/allSponsors'
+
+                fetch(conturl, {
+                    method: 'POST',
+                    body: JSON.stringify(cont_data),
+                    headers: { "Content-type": "application/json; charset=UTF-8" }
+                }).then(r => r.json())
+                    .then(response => {
+                        if (response.message) {
+                            let firstname = $('#firstname').val('')
+                            let email = $('#email').val('')
+                            let lastname = $('#lastname').val('')
+                            let message = $('#address').val('')
+                            let phone_no = $('#phone_no').val('')
+                            console.log(firstname)
+                            /*location.reload();
+                            return false;*/
+                        }
+                    })
+                    .catch(error => console.log(error))
+            })
+        }
+
+
+        //register
+
+        function ticket() {
+            $('.ticket').on('click', function () {
+                let name = $('#name').val()
+                let email = $('#email').val()
+                let position = $('#position').val()
+                let company_name = $('#company_name').val()
+                let address = $('#address').val()
+                let phone_no = $('#phone_no').val()
+
+                const tick_data = {
+                    'name': name,
+                    'email': email,
+                    'phone_no': phone_no,
+                    'position': position,
+                    'company_name': company_name,
+                    'address': address,
+                }
+
+                let ticketurl = baseUrl + '/allSponsors'
+
+                fetch(ticketurl, {
+                    method: 'POST',
+                    body: JSON.stringify(tick_data),
+                    headers: { "Content-type": "application/json; charset=UTF-8" }
+                }).then(r => r.json())
+                    .then(response => {
+                        if (response.message) {
+                            let name = $('#name').val('')
+                            let email = $('#email').val('')
+                            let position = $('#position').val('')
+                            let company_name = $('#company_name').val('')
+                            let address = $('#address').val('')
+                            let phone_no = $('#phone_no').val('')
+                            console.log(name)
+                            /*location.reload();
+                            return false;*/
+                        }
+                    })
+                    .catch(error => console.log(error))
+            })
+        }
+
+    })
+</script>

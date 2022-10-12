@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg nav_default navbar-light ">
+    <div class="container-fluid agricon_container ">
+        {{!-- <a class="navbar-brand" href="#"><img src="images/logo.png" loading="lazy" alt="" class="Logo"></a> --}}
+        <a class="navbar-brand mylogo" href="#">
+            <h6>FPORTFOLIO</h6>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active" onclick="tab(this)">
+                    <div class="nav-link" aria-current="page" href="#home" id="home" onclick="change(this)">Home
+                    </div>
+                </li>
+                <li class="nav-item" onclick="tab(this)">
+                    <div href="#portfolio" class="nav-link" id="portfolio" onclick="change(this)">Portfolio</div>
+                </li>
+                <li class="nav-item" onclick="tab(this)">
+                    <div href="#aboutus" class="nav-link" id="aboutus" onclick="change(this)">About</div>
+                </li>
+                <li class="nav-item" onclick="tab(this)">
+                    <div href="#education" class="nav-link" id="education" onclick="change(this)">Exposure</div>
+                </li>
+                <li class="nav-item" onclick="tab(this)">
+                    <div href="#services" class="nav-link" id="services" onclick="change(this)">Services</div>
+                </li>
+                {{!-- <li class="nav-item" onclick="tab(this)">
+                    <div href="#whyattend" class="nav-link" id="whyattend" onclick="change(this)">Why Attend</div>
+                </li> --}}
+                <li class="nav-item" onclick="tab(this)">
+                    <div href="#contactus" class="nav-link" id="contactus" onclick="change(this)">Contact</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
