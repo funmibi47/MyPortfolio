@@ -154,8 +154,8 @@ body {
 }
 
 .profile_img {
-    width: 420px;
-    height: 420px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     box-shadow: 0px 5px 15px rgba(109, 108, 122, 0.3);
 }
