@@ -643,6 +643,14 @@ body {
 }
 
 @media only screen and (min-device-width: 810px) and (max-device-width: 1080px) {
+    .col-6.progress_1 {
+        width: 100%;
+    }
+
+    .col-6.progress_2 {
+        width: 100%;
+    }
+
     .row.progress_ .col-6:nth-child(1) ul li {
         display: revert;
     }
@@ -688,6 +696,14 @@ body {
 }
 
 @media only screen and (min-device-width: 439px) and (max-device-width: 768px) {
+    .col-6.progress_1 {
+        width: 100%;
+    }
+
+    .col-6.progress_2 {
+        width: 100%;
+    }
+
     .row.progress_ .col-6:nth-child(1) ul li {
         display: revert;
     }
